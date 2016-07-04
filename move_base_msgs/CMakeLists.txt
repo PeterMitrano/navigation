@@ -8,6 +8,12 @@ find_package(catkin REQUIRED
         geometry_msgs
         )
 
+# msgs
+add_message_files(
+  DIRECTORY msg
+  FILES
+        RecoveryStatus.msg
+)
 
 # actions
 add_action_files(
